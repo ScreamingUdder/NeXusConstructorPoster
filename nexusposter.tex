@@ -79,15 +79,18 @@ A recent addition to the NeXus standard means components that are used in experi
 Currently, there is no tool for visualising and editing NeXus files. The section below describes our solution for this and how we are implementing a tool containing this functionality. NeXus files are outputted by the experiment, and tools need to be configured to write them. This is currently being done manually by editing large JSON files which is both fragile and time-consuming.
 \end{custombox}
 
-\begin{custombox}{The NeXus Constructor}
-\includegraphics[width=\linewidth]{screenshot.png}
-\end{custombox}
+
 
 \end{column}   
 %%%%%%%%%% End of Column 1 %%%%%%%%%%
 
 %%%%%%%%%% Start of Column 2 %%%%%%%%%%
 \begin{column}{0.47\paperwidth}  
+
+\begin{custombox}{The NeXus Constructor}
+\includegraphics[width=\linewidth]{screenshot.png}
+The NeXus constructor is a tool written in Qt for Python which allows creating, editing and visualising NeXus files and their equivalent JSON files for configuring the experimental control software in order to write real-time data. 
+\end{custombox}
 
 \begin{custombox}{Qt for Python}
 We are using Qt for Python(PySide2) for the NeXus Constructor's graphical user interface. These are the official bindings for Qt 5 C++ API, provided by the Qt company. 
