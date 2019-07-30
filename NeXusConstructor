@@ -1,0 +1,2 @@
+\includegraphics[width=\linewidth]{screenshot.png}
+The NeXus constructor is a tool written in Qt for Python which allows creating, editing and visualising NeXus files and their equivalent JSON files for configuring the experimental control software in order to write real-time data. 
