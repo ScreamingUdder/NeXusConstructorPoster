@@ -1,6 +1,6 @@
 \documentclass[usenames,dvipsnames]{beamer} 
 
-\usepackage[orientation=portrait,scale=1.4,size=a1]{beamerposter} 
+\usepackage[orientation=portrait,scale=1.2,size=a0]{beamerposter} 
 \usepackage{svg}
 \usepackage{tcolorbox}
 \usepackage{background}
@@ -14,14 +14,13 @@
 \setbeamercolor{date}{fg=red}  
  
  % Poster title
-
-\title{\\[0.2cm] \Huge \textbf{The NeXus Constructor}} 
+\title{\Huge \textbf{The NeXus Constructor}}
 \subtitle{\Large Visualising the Configuration of Neutron Experiments with Qt for Python}
 \author{\large \textbf{Jack Harper\inst{1}}, \textbf{Dolica Akello-Egwel\inst{1}}, Matthew Jones\inst{1,}\inst{2}, Dominic Oram\inst{1}, Jonas Nilsson\inst{3}, Tobias Richter\inst{3} }
 \institute{\normalsize   
-\inst{1} ISIS Facility, Rutherford Appleton Laboratory, Didcot, Oxfordshire, UK  \,\, 
+\inst{1} ISIS Facility, Rutherford Appleton Laboratory, Didcot, Oxfordshire, UK
 \inst{2} Tessella Ltd., Abingdon, Oxfordshire, UK
-\inst{3} European Spallation Source, Lund, Sweden \\
+\inst{3} European Spallation Source, Lund, Sweden
 }
 
 % Remove Date
@@ -57,7 +56,7 @@
 \maketitle
 
 % Shrink gap between title and main poster content
-\vspace{-1.5cm}
+\vspace{-400pt}
 
 \textcolor{white}{\rule{\textwidth}{6pt}}
 \begin{columns}[t]  
@@ -94,8 +93,10 @@ The NeXus constructor is a tool written in Qt for Python which allows creating, 
 
 \begin{custombox}{Qt for Python}
 We are using Qt for Python(PySide2) for the NeXus Constructor's graphical user interface. These are the official bindings for Qt 5 C++ API, provided by the Qt company. 
+
 There are two main methods of using Qt in Python, the more common "Widgets" framework or Qt-Quick which uses a markup language called QML.
-We are taking the Qt-Widgets approach to developing the NeXus constructor, as the tooling for Qt-Quick/QML seems to be a bit lacking and some of the bindings are not pythonic, and rather use C++-like idioms. Widgets also look more native to the OS running them. 
+We are taking the Qt-Widgets approach to developing the NeXus constructor, as the tooling for Qt-Quick/QML seems to be a bit lacking and some of the bindings are not pythonic, and rather use C++-like idioms. Widgets also look more native to the OS running them.
+
 Since version 5.12 PySide2 has included the Qt3D module in Qt5. We are utilising this with our 3d View of components in the neutron experiments. Qt3D provides a high-level interface to OpenGL which allows us to display the geometry information of components as well as an animated pulsed neutron beam.
 \includegraphics[width=\linewidth]{qt3d.png}
 \end{custombox}
