@@ -37,7 +37,7 @@
 
 %%%%%%%%%%% Start of Column 1 %%%%%%%%%%
 \begin{tcolorbox}[colback=white,colframe=white,title=Introduction,coltitle=blue]
-\lipsum[2-3]
+Neutron experiments would be pointless without data analysis and visualisation. In order to perform accurate data analysis, you need to lay out where each component is with high precision, such as neutron detectors, which capture the pulse of energy after going through a sample, or disk choppers, which cut the beam of neutrons up. 
 \end{tcolorbox}
 
 \bigskip
@@ -49,6 +49,7 @@
 \bigskip
 
 \begin{tcolorbox}[colback=white,colframe=white,title=The NeXus Constructor,coltitle=blue]
+\includegraphics[width=\linewidth]{screenshot.png}
 \lipsum[2]
 \end{tcolorbox}
 
@@ -59,14 +60,15 @@
 \begin{column}{0.47\paperwidth}  
 
 \begin{tcolorbox}[colback=white,colframe=white,title=Qt for Python,coltitle=blue]
-\lipsum[2-4]
+We are using Qt for Python(PySide2) for the NeXus Constructor's graphical user interface. These are the official bindings for Qt 5 C++ API, provided by the Qt company. 
+
+We are taking the Qt-Widgets approach to developing the NeXus constructor, as the tooling for Qt-Quick/QML seems to be a bit lacking and some of the bindings are not pythonic, and rather use C++-like idioms. 
+
+Since version 5.12 PySide2 has included the Qt3D module in Qt5. We are utilising this with our 3d View of components in the neutron experiments. Qt3D provides a high-level interface to OpenGL which allows us to display the geometry information of components as well as an animated pulsed neutron beam.
 \end{tcolorbox}
 
 \bigskip
 
-\begin{tcolorbox}[colback=white,colframe=white,title=Qt for Python,coltitle=blue]
-\lipsum[1-2]
-\end{tcolorbox}
 
 \bigskip
 
