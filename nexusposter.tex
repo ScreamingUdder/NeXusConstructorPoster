@@ -6,7 +6,7 @@
 \usepackage{background}
 \usepackage{lipsum}  
 \usepackage{tgheros}
-   
+
 \usebackgroundtemplate{\includesvg[height=\paperheight]{template}}%
 \setbeamercolor{title}{fg=white} 
 \setbeamercolor{author}{fg=white} 
@@ -59,7 +59,7 @@
 \maketitle
 
 % Shrink gap between title and main poster content
-\vspace{-800pt}
+\vspace{-700pt}
 
 \textcolor{white}{\rule{\textwidth}{6pt}}
 \begin{columns}[t]  
@@ -68,11 +68,11 @@
 %%%%%%%%%%% Start of Column 1 %%%%%%%%%%
 
 \begin{custombox}{Introduction}
-\input{Introduction.tex}
+\input{Introduction}
 \end{custombox}
 
 \begin{custombox}{Scientific Facilities and the NeXus Standard}
-\input{ScientificFacilities.tex}
+\input{ScientificFacilities}
 \end{custombox}
 
 \end{column}   
@@ -82,15 +82,15 @@
 \begin{column}{0.47\paperwidth}  
 
 \begin{custombox}{The NeXus Constructor}
-\input{NeXusConstructor.tex}
+\input{NeXusConstructor}
 \end{custombox}
 
 \begin{custombox}{Qt for Python}
-\input{QtForPython.tex}
+\input{QtForPython}
 \end{custombox}
 
 \begin{custombox}{Conclusion}
-\input{Conclusion.tex}
+\input{Conclusion}
 \end{custombox}
 
 \end{column}
