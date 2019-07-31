@@ -19,7 +19,7 @@
  % Poster title
 \title{\fontsize{100}{1}\textbf{The NeXus Constructor} \\[5pt] \Large https://github.com/ess-dmsc/nexus-constructor \\[25pt]}
 \subtitle{\fontsize{50}{1}\textbf{Visualising the Configurations of Neutron Experiments with Qt for Python}}
-\author{\large \textbf{Jack Harper\inst{1}}, \textbf{Dolica Akello-Egwel\inst{1}}, Matthew Jones\inst{1,}\inst{2}, Dominic Oram\inst{1}, Jonas Nilsson\inst{3}, Tobias Richter\inst{3} }
+\author{\large \textbf{Jack Harper\inst{1}}, \textbf{Dolica Akello-Egwel\inst{1}}, Matthew Jones\inst{2}, Dominic Oram\inst{1}, Jonas Nilsson\inst{3}, Tobias Richter\inst{3} }
 \institute{\normalsize   
 \inst{1} ISIS Facility, Rutherford Appleton Laboratory, Didcot, Oxfordshire, UK, \,
 \inst{2} Tessella Ltd., Abingdon, Oxfordshire, UK, \,
@@ -46,11 +46,14 @@
   coltitle=blue!20!black,
   fonttitle=\huge,
   coltitle=blue,
-  title = #1
+  title=#1,
+  % parbox=false,
 }
 
 % Spacing after the text boxes
 \AfterEndEnvironment{custombox}{\vspace{0.8cm}}
+
+\tcbset{before upper=\setlength{\parskip}{1em}}
 
 \begin{document}
 
