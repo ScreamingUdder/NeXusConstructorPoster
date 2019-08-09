@@ -1,6 +1,6 @@
 \documentclass[usenames,dvipsnames]{beamer} 
 
-\usepackage[orientation=portrait,scale=1.2,size=a0]{beamerposter} 
+\usepackage[orientation=landscape,scale=1.2,size=a0]{beamerposter} 
 \usepackage{svg}
 \usepackage{tcolorbox}
 \usepackage{background}
@@ -44,7 +44,7 @@
   toptitle=3mm,
   bottomtitle=3mm,
   coltitle=blue!20!black,
-  fonttitle=\huge\bfseries,
+  fonttitle=\LARGE\bfseries,
   coltitle=blue,
   title=#1,
   % parbox=false,
@@ -59,42 +59,51 @@
 
 \begin{frame}[t]
 
-% \vspace{-50pt}  
+\vspace{-25pt}  
 \maketitle
 
 % Shrink gap between title and main poster content
-\vspace{-50pt}
+\vspace{-70pt}
 
 \textcolor{white}{\rule{\textwidth}{6pt}}
 \begin{columns}[t]  
-\begin{column}{0.47\paperwidth}
+\begin{column}{0.32\paperwidth}
 
 %%%%%%%%%%% Start of Column 1 %%%%%%%%%%
 
-\begin{custombox}{Introduction}
-\input{Introduction}
+\begin{custombox}{Neutron Spallation}
+\input{NeutronExperiments}
 \end{custombox}
 
-\begin{custombox}{Scientific Facilities and the NeXus Standard}
-\input{ScientificFacilities}
+\begin{custombox}{Neutron Facilities}
+\input{NeutronFacilities}
 \end{custombox}
 
-\begin{custombox}{The NeXus Constructor}
-\input{NeXusConstructor}
+\begin{custombox}{The NeXus Standard}
+\input{NeXusStandard}
 \end{custombox}
+
 \end{column}   
 %%%%%%%%%% End of Column 1 %%%%%%%%%%
 
 %%%%%%%%%% Start of Column 2 %%%%%%%%%%
-\begin{column}{0.47\paperwidth}  
+\begin{column}{0.32\paperwidth}  
 
+
+
+\begin{custombox}{The NeXus Constructor}
+\input{NeXusConstructor}
+\end{custombox}
+
+
+\end{column}
+%%%%%%%%%% End of Column 2 %%%%%%%%%%  
+\begin{column}{0.32\paperwidth}
 
 \begin{custombox}{Qt for Python}
 \input{QtForPython}
 \end{custombox}
-
 \end{column}
-%%%%%%%%%% End of Column 2 %%%%%%%%%%  
 \end{columns}
 \end{frame}
 \end{document}
