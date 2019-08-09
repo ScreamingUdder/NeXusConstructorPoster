@@ -8,12 +8,23 @@
 \usepackage{tgheros}
 \usepackage{minted}
 \usepackage{anyfontsize}
+\usepackage{dirtree}
+\usepackage{graphbox}
 
 \usebackgroundtemplate{\includesvg[height=\paperheight]{template}}%
 \setbeamercolor{title}{fg=white} 
 \setbeamercolor{author}{fg=white} 
 \setbeamercolor{institute}{fg=white} 
 \setbeamercolor{date}{fg=red}
+\newcommand\myicon[1]{{\color{#1}\rule{2ex}{2ex}}}
+% If you have actual icon images, use \includegraphics to include them
+% If you are generating them, put in the appropriate code for them here
+% now we make a command for a folder/file which inserts the icon and its label
+% adjust this as needed. If you only have 2 icons, then you could create
+% a \myfile and \myfolder command with the icon fixed.
+\newcommand{\myfolder}[1]{\begin{tabular}{cc}\includegraphics[align=c,height=35pt]{foldericon} & {#1}\end{tabular}}
+\newcommand{\myfile}[1]{\begin{tabular}{cc}\includegraphics[align=c,height=35pt]{fileicon} & {#1}\end{tabular}}
+
 
  
  % Poster title
