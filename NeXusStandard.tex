@@ -1,31 +1,55 @@
 NeXus is an effort by an international group of scientists to define a common data exchange and archival format for neutron, X-ray and muon experiments. NeXus is built on top of the scientific data format HDF5 and adds domain-specific rules for organizing data within HDF5 files.
 
-\vspace{20pt}
-
-\DTsetlength{10pt}{35pt}{5pt}{2pt}{7pt}
-
+\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner ysep=0pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(20pt,0) |- node[fill,inner sep=5pt] {} (.child anchor)\forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=40pt}, % Horizontal line length
+  }
+[
+  [\myfolder{NXinstrument}
+    [\myfolder{NXsource}]
+    [\myfolder{NXdetector}
+        [\myfile{counts[100]}]
+        [\myfile{gas\_pressure[100]}]
+        [\myfile{two\_theta[100]}]
+        [\myfolder{NXoff\_geometry}
+            [\myfile{vertices[100]}]
+            [\myfile{faces[100]}]
+        ]
+    ]
+    [\myfolder{NXmonochromator}]
+  ]
+  [\myfolder{NXdata}
+    [\myfile{counts[100]}]
+    [\myfile{two\_theta[100]}]
+  ]
+  [\myfolder{NXsample}]
+]
+\end{forest}
 
 % \begin{figure}
 % \caption{A typical nexus file layout with shape definition}
 % \includegraphics[width=\linewidth]{nexusdiagram.png}
-\dirtree{%
-.1 root.
-.2 \myfolder{NXinstrument}.
-.3 \myfolder{NXsource}.
-.3 \myfolder{NXdetector}.
-.4 \myfile{counts[100]}.
-.4 \myfile{gas\_pressure[100]}.
-.4 \myfile{two\_theta[100]}.
-.4 \myfolder{NXoff\_geometry}.
-.5 \myfile{vertices[100]}.
-.5 \myfile{faces[100]}.
-.3 \myfolder{NXmonochromator}.
-.2 \myfolder{NXdata}.
-.3 \myfile{counts[100]}.
-.3 \myfile{two\_theta[100]}.
-.2 \myfolder{NXsample}.
-}
+
 % \end{figure}
+
+
 
 % What's a shape definition?
 
