@@ -1,6 +1,6 @@
 \documentclass[usenames,dvipsnames]{beamer} 
 
-\usepackage[orientation=landscape,scale=1.2,size=a0]{beamerposter} 
+\usepackage[orientation=landscape,scale=1.1,size=a0]{beamerposter} 
 \usepackage{svg}
 \usepackage{tcolorbox}
 \usepackage{background}
@@ -10,6 +10,7 @@
 \usepackage{anyfontsize}
 \usepackage{dirtree}
 \usepackage{graphbox}
+\usepackage{forest}
 
 \usebackgroundtemplate{\includesvg[height=\paperheight]{template}}%
 \setbeamercolor{title}{fg=white} 
@@ -55,7 +56,7 @@
   toptitle=3mm,
   bottomtitle=3mm,
   coltitle=blue!20!black,
-  fonttitle=\Large\bfseries,
+  fonttitle=\LARGE\bfseries,
   coltitle=blue,
   title=#1,
   % parbox=false,
@@ -86,7 +87,7 @@
 \input{Introduction}
 \end{custombox}
 
-\begin{custombox}{What is Neutron Spallation?}
+\begin{custombox}{What is a Neutron Experiment?}
 \input{Spallation}
 \end{custombox}
 
