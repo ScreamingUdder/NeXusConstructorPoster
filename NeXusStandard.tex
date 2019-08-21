@@ -44,14 +44,20 @@
 \end{forest}
 \fi
 
-% \begin{figure}
-% \caption{A typical nexus file layout with shape definition}
-% \includegraphics[width=\linewidth]{nexusdiagram.png}
-
-% \end{figure}
-
-
+\begin{figure}
+\includegraphics[width=0.7\linewidth]{instrument_arch.png}
+\caption{A typical NeXus file layout}
+\end{figure}
 
 % What's a shape definition?
 
-A recent addition to the NeXus standard means components that are used in experiments can specify shape definition to describe their placement, size and geometry. Transformations (NXtransformations) can be applied to these components when their position changes during or before the experiment. 
+The NeXus file format was developed with the following aims:
+\begin{itemize}
+\item to create a file format which is common to different neutron facilities,
+\item to store all experiment data in a single file,
+\item to create a file format which can be read into various different software 
+\end{itemize}
+
+\iffalse
+A recent addition to the NeXus standard means components that are used in experiments can specify shape definition to describe their placement, size and geometry. Transformations (NXtransformations) can be applied to these components when their position changes during or before the experiment.
+\fi
