@@ -45,18 +45,20 @@
 \fi
 
 \begin{figure}
-\includegraphics[width=0.7\linewidth]{instrument_arch.png}
+\includegraphics[width=0.6\linewidth]{instrument_arch.png}
 \caption{A typical NeXus file layout}
 \end{figure}
 
 % What's a shape definition?
 
-The NeXus file format was developed with the following aims:
+The NeXus file format was developed with the aim of:
 \begin{itemize}
-\item to create a file format which is common to different neutron facilities,
-\item to store all experiment data in a single file,
-\item to create a file format which can be read into various different software 
+\item Creating a file format which is common to different neutron facilities.
+\item Storing all experiment data in a single file.
+\item Allowing experiment data to be loaded into a variety of different software tools.
 \end{itemize}
+
+NeXus is an extension of the popular HDF5 file format.
 
 \iffalse
 A recent addition to the NeXus standard means components that are used in experiments can specify shape definition to describe their placement, size and geometry. Transformations (NXtransformations) can be applied to these components when their position changes during or before the experiment.
