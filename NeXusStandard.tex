@@ -55,11 +55,7 @@ The NeXus file format was developed with the aim of:
 \begin{itemize}
 \item Creating a file format which is common to different neutron facilities.
 \item Storing all experiment data in a single file.
-\item Allowing experiment data to be loaded into a variety of different software tools.
+\item Allowing experiment data to be loaded into a variety of different software tools without the need for conversion.
 \end{itemize}
 
-NeXus is an extension of the popular HDF5 file format.
-
-\iffalse
-A recent addition to the NeXus standard means components that are used in experiments can specify shape definition to describe their placement, size and geometry. Transformations (NXtransformations) can be applied to these components when their position changes during or before the experiment.
-\fi
+NeXus is built on top of the HDF5 file format. It adds domain-specific rules for organising data and has a dictionary of well-defined domain-specific file names pertaining to the components used in neutron experiments and their characteristics.
