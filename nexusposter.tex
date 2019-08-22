@@ -25,10 +25,9 @@
 % a \myfile and \myfolder command with the icon fixed.
 \newcommand{\myfolder}[1]{\begin{tabular}{cc}\includegraphics[align=c,height=35pt]{foldericon} & {#1}\end{tabular}}
 \newcommand{\myfile}[1]{\begin{tabular}{cc}\includegraphics[align=c,height=35pt]{fileicon} & {#1}\end{tabular}}
+    \newcommand{\mysubtitle}[1]{\vspace{-25pt}\begin{center}\color{blue}{\fontsize{30}{1}\textbf{#1}}\end{center}\vspace{-20pt}}
 
-
- 
- % Poster title
+% Poster title
 \title{\fontsize{105}{1}\textbf{The NeXus Constructor} \\[5pt] \Large https://github.com/ess-dmsc/nexus-constructor \\[25pt]}
 \subtitle{\fontsize{50}{1}\textbf{Visualising the Configurations of Neutron Experiments with Qt for Python}\vspace{-15pt}}
 \author{\large \textbf{Jack Harper\inst{1}}, \textbf{Dolica Akello-Egwel\inst{1}}, Matthew Jones\inst{2}, Dominic Oram\inst{1}, Jonas Nilsson\inst{3}, Tobias Richter\inst{3} }
