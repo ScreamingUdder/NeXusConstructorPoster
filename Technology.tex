@@ -1,6 +1,6 @@
 \mysubtitle{Features}
 \begin{itemize}
-\item \texttt{pint} - Unit conversion. This comes in handy when drawing 3D objects from mesh files or NeXus files that contain geometry information. As the STL and OFF mesh file formats do not come with unit information, through using pint we can at least allow the user to provide units when creating components so that objects to not become unexectedly large/small in the InstrumentView. Another advantage is that pint already knows that "metre", "meter", "metres", etc mean the same thing so we don't have to worry about writing code for handling these cases.
+\item \texttt{pint} - Unit conversion. This comes in handy when drawing 3D objects from mesh files or NeXus files that contain geometry information but lack unit information. Pint can provide validation and conversion for different types of units. 
 \item \texttt{h5py} - Reading from and writing to NeXus files.
 \item \texttt{silx} - Displayng the contents of NeXus files in a tree view.
 \end{itemize}

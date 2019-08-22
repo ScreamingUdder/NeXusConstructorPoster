@@ -18,6 +18,9 @@
 \setbeamercolor{institute}{fg=white} 
 \setbeamercolor{date}{fg=red}
 \newcommand\myicon[1]{{\color{#1}\rule{2ex}{2ex}}}
+
+\colorlet{titlecolour}{blue!20!black}
+
 % If you have actual icon images, use \includegraphics to include them
 % If you are generating them, put in the appropriate code for them here
 % now we make a command for a folder/file which inserts the icon and its label
@@ -25,7 +28,7 @@
 % a \myfile and \myfolder command with the icon fixed.
 \newcommand{\myfolder}[1]{\begin{tabular}{cc}\includegraphics[align=c,height=35pt]{foldericon} & {#1}\end{tabular}}
 \newcommand{\myfile}[1]{\begin{tabular}{cc}\includegraphics[align=c,height=35pt]{fileicon} & {#1}\end{tabular}}
-    \newcommand{\mysubtitle}[1]{\vspace{-25pt}\begin{center}\color{blue}{\fontsize{30}{1}\textbf{#1}}\end{center}\vspace{-20pt}}
+\newcommand{\mysubtitle}[1]{\vspace{-25pt}\begin{center}\color{blue}{\fontsize{30}{1}\textbf{#1}}\end{center}\vspace{-20pt}}
 
 % Poster title
 \title{\fontsize{105}{1}\textbf{The NeXus Constructor} \\[5pt] \Large https://github.com/ess-dmsc/nexus-constructor \\[25pt]}
@@ -78,9 +81,9 @@
 
 \textcolor{white}{\rule{\textwidth}{6pt}}
 \begin{columns}[t]  
-\begin{column}{0.32\paperwidth}
 
 %%%%%%%%%%% Start of Column 1 %%%%%%%%%%
+\begin{column}{0.32\paperwidth}
 
 \begin{custombox}{Introduction}
 \input{Introduction}
@@ -100,8 +103,6 @@
 %%%%%%%%%% Start of Column 2 %%%%%%%%%%
 \begin{column}{0.32\paperwidth}  
 
-
-
 \begin{custombox}{The NeXus Constructor}
 \input{NeXusConstructor}
 \end{custombox}
@@ -110,13 +111,16 @@
 \input{Technology}
 \end{custombox}
 
-
 \end{column}
 %%%%%%%%%% End of Column 2 %%%%%%%%%%  
 \begin{column}{0.32\paperwidth}
 
 \begin{custombox}{Qt for Python}
 \input{QtForPython}
+\end{custombox}
+
+\begin{custombox}{Qt3D in the NeXus Constructor}
+\input{Qt3DNexus}
 \end{custombox}
 
 \begin{custombox}{Future Work}

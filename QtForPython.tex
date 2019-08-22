@@ -1,14 +1,5 @@
-We are using Qt for Python(PySide2) for the NeXus Constructor's graphical user interface. These are the official bindings for Qt 5 C++ API, provided by the Qt company.
-\bigskip
-There are two main methods of using Qt in Python, the more common "Widgets" framework or Qt-Quick which uses a markup language called QML.
-We are taking the Qt-Widgets approach to developing the NeXus constructor, as the tooling for Qt-Quick/QML seems to be a bit lacking and some of the bindings are not as pythonic, and rather use C++-like idioms. Widgets also look more native to the OS running them. The main advantage QML provides is it's scaling for high-resolution displays or mobile devices.
-\bigskip
-Since version 5.12 PySide2 has included the Qt3D module in Qt5. We are utilising this with our 3d View of components in the neutron experiments. Qt3D provides a high-level interface to OpenGL which allows us to display the geometry information of components as well as an animated pulsed neutron beam. Qt3D's entity framework is similar to other GUI frameworks and 3D engines, such as unity. This means all the textures, meshes and transformations can be stored with a single entity in the Qt3d view, which is convenient for easily changing aspects of the 3d object. 
-\bigskip
-\begin{figure}
-\caption{Qt3D's element inspector}
-\includegraphics[width=\linewidth]{qt3d.png}
-\end{figure}
+Qt for Python (PySide2) are the official bindings for Qt 5 C++ API, provided by the Qt company. There are two main methods of using Qt in Python: the more common "Widgets" framework and Qt Quick which uses a markup language called QML.
+Also the application was originally developed in QML, we eventually made the decision to move over to Widgets. There are several reasons for this: Widgets feel more pythonic than Qt-Quick, Widgets look more native to the OS running them. One downside is that QML is better-suited for scaling on high-resolution displays.
 \bigskip
 
 % The code snippet below shows the usage of a typical Qt3D view in python. Qt3D provides some high-level geometry types for adding cylinders, meshes, spheres as well as several other shapes. This is all wrapping OpenGL, and in the future Qt have stated they will support other graphics engines such as DirectX12, Vulkan and Metal. Currently there is some limited support for vulkan using the QVulkanWindow with a QVulkanInstance.
