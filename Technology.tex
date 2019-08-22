@@ -1,0 +1,12 @@
+\begin{itemize}
+\item \texttt{pint} - Unit conversion. This comes in handy when loading mesh files that may have been created with different units and NeXus files with geometry information. Another advantage is that pint knows that "metre", "meter", "metres", etc mean the same thing so we don't have to worry.
+\item \texttt{h5py} - Reading from and writing to NeXus files.
+\item \texttt{silx} - Displaing the contents of NeXus files in a tree view.
+\end{itemize}
+
+\begin{itemize}
+\item \texttt{black} and \texttt{flake 8} - Code formatting and linting.
+\item \texttt{pre-commit}
+\item \texttt{pytest} and \texttt{pytest-cov} - Testing with coverage output.
+\item \texttt{pytest-qt} - Simulating button clicks and user input in order to check that the user clicking on object X triggers event Y. Especially useful when combined with \texttt{parametrize} to ensure that every \textit{possible} combination of actions that should lead to Y do indeed lead to Y.
+\end{itemize}
