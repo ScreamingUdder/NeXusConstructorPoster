@@ -5,10 +5,10 @@ Despite its many advantages, the NeXus file format is not particularly easy to w
 \begin{itemize}
 \item Instrument View - A Qt3D pane that draws the experiment components in 3D. As NeXus files can contain information about a component's geometry and any transformations that may have been applied to it, translating this into something Qt3D can understand is fairly simple.
 \item Component List - A list of the components in the NeXus file.
-\item NeXus File Layout - An illustration of the hierarchical NeXus structure. Can't be used to see the values of the individual fields, but can serve as a tool through which you can check that the data has a sensible arrangement. Because the NeXus format is based on HDF5, the \texttt{h5py} library is able to interpret NeXus files so that we may display their layout in our application.
+\item NeXus File Layout - An illustration of the hierarchical NeXus structure. Can't be used to see the values of the individual fields, but can serve as a tool through which you can check that the data has a sensible arrangement.
 \end{itemize}
 
 \begin{figure}
-\caption{Screenshot of the NeXus Constructor}
+\caption{Screenshot of the NeXus Constructor. The file that is open in the NeXus Constructor contains an \texttt{NX\_sample} which is represented by a red cube in the main window. In front of this is the Add Component Dialog through which users can add entries to a NeXus file. In this example an \texttt{NXdisk\_chopper} is being created.}
 \includegraphics[width=\linewidth]{screenshot.png}
 \end{figure}
