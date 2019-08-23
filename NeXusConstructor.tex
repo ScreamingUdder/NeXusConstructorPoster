@@ -1,11 +1,11 @@
-The NeXus Constructor is a tool written with \textit{Qt for Python} that provides an interface for scientists to easily examine and modify the contents of NeXus files. \iffalse Such files can then be used for configuring the experiment control software in order to write real-time data. \fi The NeXus Constructor has the a number of key features:
+The NeXus Constructor is a tool written with \textit{Qt for Python} that provides an interface for scientists to write, edit, and examine NeXus files. \iffalse Such files can then be used for configuring the experiment control software in order to write real-time data. \fi The NeXus Constructor has the a number of key features:
 
 % Someone may not know what experiment control software does, what makes real-time data good, etc.
 
 \begin{itemize}
-\item Instrument View - A Qt3D pane that draws the experiment components in 3D. As NeXus files can contain information about a component's geometry and any transformations that may have been applied to it, translating this into something Qt3D can understand is fairly simple.
-\item Component List - A list of the components in the NeXus file.
-\item NeXus File Layout - An illustration of the hierarchical NeXus structure. Can't be used to see the values of the individual fields, but can serve as a tool through which you can check that the data has a sensible arrangement.
+\item Instrument View - A Qt3D pane that draws the experiment components in 3D.
+\item Component List - A list of the components contained in the NeXus file.
+\item NeXus File Layout - An illustration of the hierarchical NeXus structure. Can't generally be used to see the values of the individual fields, but can serve as a tool through which you can check that the data has a sensible arrangement.
 \item Add Component Dialog - A tool with which users can add components to a NeXus file.
 \end{itemize}
 
@@ -13,6 +13,8 @@ The NeXus Constructor is a tool written with \textit{Qt for Python} that provide
 \includegraphics[width=\linewidth]{screenshot.png}
 \caption{Screenshot of the NeXus Constructor. The file that is open in the NeXus Constructor contains a single component, an \texttt{NX\_sample}, which is represented by a red cube in the main window's Instrument View. In front of the main window is the Add Component Dialog through which users can add components to their NeXus file. In this example the Add Component Dialog is being used to create a \texttt{NXdisk\_chopper} component.}
 \end{figure}
+
+
 
 \iffalse
 % Other Advantages of Using the NeXus Constructor

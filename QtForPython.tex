@@ -1,7 +1,6 @@
-Qt for Python (PySide2) are the official bindings for Qt 5 C++ API, provided by the Qt company. There are two main methods of using Qt in Python: the more common "Widgets" framework and Qt Quick which uses a markup language called QML.
-Also the application was originally developed in QML, we eventually made the decision to move over to Widgets. There are several reasons for this: Widgets feel more pythonic than Qt-Quick, Widgets look more native to the OS running them. One downside is that QML is better-suited for scaling on high-resolution displays.
+Qt for Python (PySide2) are the official bindings for Qt 5 C++ API, provided by the Qt company. There are two main methods of using Qt in Python: the more common "Widgets" framework and Qt Quick which uses a markup language called QML. We have built our application using Widgets for a number of reasons: Widgets feel more pythonic than Qt-Quick, Widgets look more native to the OS running them, Widget-based applications can be more easily tested with \texttt{pytest-qt}. We have also found it easier to achieve a greater seperation between interface-logic and business-logic. One downside is that QML is better-suited for scaling on high-resolution displays but overall we feel that Widgets are better suited to the requirements of the NeXus Constructor.
 \bigskip
 
-% The code snippet below shows the usage of a typical Qt3D view in python. Qt3D provides some high-level geometry types for adding cylinders, meshes, spheres as well as several other shapes. This is all wrapping OpenGL, and in the future Qt have stated they will support other graphics engines such as DirectX12, Vulkan and Metal. Currently there is some limited support for vulkan using the QVulkanWindow with a QVulkanInstance.
-
-
+\iffalse
+The code snippet below shows the usage of a typical Qt3D view in python. Qt3D provides some high-level geometry types for adding cylinders, meshes, spheres as well as several other shapes. This is all wrapping OpenGL, and in the future Qt have stated they will support other graphics engines such as DirectX12, Vulkan and Metal. Currently there is some limited support for vulkan using the QVulkanWindow with a QVulkanInstance.
+\fi
