@@ -1,48 +1,4 @@
-
-\iffalse
-\begin{forest}
-  for tree={
-    font=\ttfamily,
-    grow'=0,
-    child anchor=west,
-    parent anchor=south,
-    anchor=west,
-    calign=first,
-    inner ysep=0pt,
-    edge path={
-      \noexpand\path [draw, \forestoption{edge}]
-      (!u.south west) +(20pt,0) |- node[fill,inner sep=5pt] {} (.child anchor)\forestoption{edge label};
-    },
-    before typesetting nodes={
-      if n=1
-        {insert before={[,phantom]}}
-        {}
-    },
-    fit=band,
-    before computing xy={l=40pt}, % Horizontal line length
-  }
-[
-  [\myfolder{NXinstrument}
-    [\myfolder{NXsource}]
-    [\myfolder{NXdetector}
-        [\myfile{counts[100]}]
-        [\myfile{gas\_pressure[100]}]
-        [\myfile{two\_theta[100]}]
-        [\myfolder{NXoff\_geometry}
-            [\myfile{vertices[100]}]
-            [\myfile{faces[100]}]
-        ]
-    ]
-    [\myfolder{NXmonochromator}]
-  ]
-  [\myfolder{NXdata}
-    [\myfile{counts[100]}]
-    [\myfile{two\_theta[100]}]
-  ]
-  [\myfolder{NXsample}]
-]
-\end{forest}
-\fi
+These components in instruments can be used in a "mix-and-match" fashion depending on the nature of the experiment. The combination of the components used in an experiment, their properties, their position, etc amounts to what we call the \textit{experiment configuration}. A precise description of this configuration is vital if we are to analyse our results reliably, hence the need for a file format that is appropriate for capturing all of this information. 
 
 \begin{wrapfigure}{L}{0.5\linewidth}
 \begin{center}
