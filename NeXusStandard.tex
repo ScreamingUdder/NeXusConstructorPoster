@@ -44,10 +44,12 @@
 \end{forest}
 \fi
 
-\begin{figure}
-\includegraphics[width=0.4\linewidth]{instrument_arch.png}
+\begin{wrapfigure}{L}{0.5\linewidth}
+\begin{center}
+\includegraphics[width=0.8\linewidth]{instrument_arch.png}
+\end{center}
 \caption{A typical NeXus file layout}
-\end{figure}
+\end{wrapfigure}
 
 % What's a shape definition?
 
@@ -57,5 +59,7 @@ The NeXus file format was developed with the aim of:
 \item Storing all experiment data in a single file.
 \item Allowing experiment data to be loaded into a variety of different software tools without the need for conversion.
 \end{itemize}
+
+\smallskip
 
 NeXus is built on top of the HDF5 file format. It adds domain-specific rules for organising data and has a dictionary of well-defined domain-specific field names pertaining to the components used in neutron experiments and their characteristics.
