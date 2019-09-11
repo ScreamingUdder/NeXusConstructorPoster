@@ -8,4 +8,11 @@ Qt for Python (PySide2) are the official bindings for Qt 5 C++ API, provided by 
 
 One downside is that QML is better-suited for scaling on high-resolution displays but overall we feel that Widgets is a better fit for the requirements of the NeXus Constructor.
 
+\begin{wrapfigure}{L}{0.4\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{zoom.jpg}
+\end{center}
+\caption{A typical NeXus file layout}
+\end{wrapfigure}
+
 Qt3D provides a high-level interface to OpenGL which allows us to display instrument components in 3D. Qt3D's entity framework is similar to other GUI frameworks and 3D engines such as Unity. This means all the textures, meshes, and transformations can be stored with a single entity in the Qt3D view. An important requirement of the NeXus Constructor is a feature for handling component transformations. With Qt3D we can easily facilitate these changes without having to build the entire entity from scratch.
