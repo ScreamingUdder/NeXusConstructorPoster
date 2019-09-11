@@ -40,7 +40,7 @@
          style="stop-color:#00a1df;stop-opacity:1" />
       <stop
          style="stop-color:#002d56;stop-opacity:1"
-         offset="0.09505731"
+         offset="0.17502469"
          id="stop881" />
       <stop
          id="stop883"
@@ -77,10 +77,10 @@
        xlink:href="#linearGradient1533"
        id="linearGradient1522"
        gradientUnits="userSpaceOnUse"
-       x1="2741.395"
-       y1="223.64322"
-       x2="-3180.6541"
-       y2="5172.2632"
+       x1="2737.6094"
+       y1="148.39148"
+       x2="-161.07355"
+       y2="6470.6118"
        gradientTransform="matrix(0.25475752,0,0,0.51265241,-1175.2217,18.244071)" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -110,15 +110,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.2743361"
-     inkscape:cx="2173.4026"
-     inkscape:cy="1946.6838"
+     inkscape:zoom="0.096992458"
+     inkscape:cx="4203.7759"
+     inkscape:cy="2242.6019"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1902"
      inkscape:window-height="1027"
-     inkscape:window-x="1927"
+     inkscape:window-x="3847"
      inkscape:window-y="25"
      inkscape:window-maximized="0" />
   <metadata
@@ -129,7 +129,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
